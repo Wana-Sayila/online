@@ -6,7 +6,7 @@
   <title>Wana Sayila</title>
   <meta name="description" content="Wana Sayila - Computer Engineer, Network Specialist, and Web Developer portfolio and contact page." />
   <meta name="keywords" content="Wana Sayila, Computer Engineer, Network Specialist, Web Developer, IT Technician, Portfolio" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
@@ -105,7 +105,22 @@ If you're looking to work with someone who combines practical experience with a 
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+  document.getElementById('nav-links').classList.toggle('show');
+});
+
+// Dark mode toggle: toggle 'dark-mode' class on body
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+// Contact form submission alert
+document.getElementById('contact-form').addEventListener('submit', e => {
+  alert('Thank you for your message! I will get back to you shortly.');
+  // The form action is mailto:, so it will open the user's email client.
+});
+  </script>
   <script>AOS.init();</script>
 </body>
 </html>
