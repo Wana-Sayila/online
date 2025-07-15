@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wana Sayila</title>
+  <meta name="description" content="Wana Sayila - Computer Engineer, Network Specialist, and Web Developer portfolio and contact page." />
+  <meta name="keywords" content="Wana Sayila, Computer Engineer, Network Specialist, Web Developer, IT Technician, Portfolio" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <div class="logo">Wana Sayila</div>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" role="button" tabindex="0">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="dark-mode-toggle" aria-label="Toggle dark mode">🌓</button></li>
+      </ul>
+    </nav>
+
+    <section class="hero" data-aos="fade-up" aria-label="Introduction">
+      <img src="profile.jpg" alt="Wana Sayila Profile Picture" class="profile-pic" />
+      <h1>Hello, I'm <span>Wana Sayila</span></h1>
+      <p>Computer Engineer | Network Specialist | IT Technician</p>
+      <a href="#contact" class="btn" role="button">Let's Get To Work</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section" data-aos="fade-up" tabindex="0">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate and results-driven Computer Engineer, proudly holding a degree from The Copperbelt University. With a versatile and hands-on background in web development, networking, and general IT support, I bring a holistic approach to solving digital challenges.
+
+Currently, I serve as an IT Technician, System Administrator, and Data Controller at one of the leading logistics companies in the region. In this role, I’m responsible for the design, configuration, and maintenance of mission-critical IT infrastructure. I manage everything from user support and system backups to server administration, network security, and data integrity, ensuring business continuity and optimal system performance in a fast-paced environment.
+
+In addition to my corporate role, I am the founder of a growing tech startup that delivers tailored IT solutions to businesses. Our services include:
+<ul>
+  <li>Network Design and Setup (LAN/WAN architecture, firewall configuration(Fortinet), VPNs)</li>
+  <li>Custom Web Development (responsive websites, business portals, and dashboards)</li>
+  <li>Database Design & Administration (MySQL, MongoDB)</li>
+  <li>IT Support and Consultancy (cloud migration, security audits, digital strategy)</li>
+</ul>
+	    
+I thrive on continuous learning and staying current with emerging technologies. Whether it’s deploying containerized applications with Docker, improving network performance, or building user-friendly web interfaces with modern JavaScript frameworks, I’m always eager to take on new technical challenges and collaborative opportunities.
+
+If you're looking to work with someone who combines practical experience with a strong engineering foundation and who’s truly passionate about tech I’d love to connect.
+      </p>
+    </section>
+
+    <section id="services" class="section light" data-aos="fade-up" tabindex="0">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card" tabindex="0" aria-label="Web Development Service">
+          <h3>Networking</h3>
+          <p>We provide robust network infrastructure solutions to ensure reliable connectivity, security, and scalability for businesses of all sizes. From small office LANs to complex multi-site WANs, our services cover planning, implementation, and maintenance of networking systems.</p>
+        </article>
+        <article class="card" tabindex="0" aria-label="Networking Service">
+          <h3>IT Consultancy and Support</h3>
+          <p>We help businesses align their technology infrastructure with their strategic goals. Our consultancy services cover everything from digital transformation planning to system integration, ensuring your IT investments deliver measurable results.</p>
+        </article>
+        <article class="card" tabindex="0" aria-label="IT Consultancy Service">
+          <h3>Web Development</h3>
+          <p>We specialize in designing and building responsive, high-performance websites tailored to individual and business needs. Whether you're looking for a sleek personal portfolio, an e-commerce platform, or a dynamic web application, we leverage modern technologies to deliver scalable and maintainable solutions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section" data-aos="fade-up" tabindex="0">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0" aria-label="Project: Network Security Implementation">
+          <h3>Website Development – Chamula Resources Limited</h3>
+          <p>Led the end-to-end development of a responsive and user-friendly corporate website for Chamula Resources Limited. Utilized modern web development technologies including HTML5, CSS3, JavaScript, and WordPress CMS to deliver a scalable digital platform. Ensured cross-browser compatibility, implemented SEO best practices, and optimized site performance for fast load times and mobile responsiveness.</p>
+        </article>
+        <article class="project-card" tabindex="0" aria-label="Project: Custom Web Portal Development">
+          <h3>Full-Stack Web Development & Branding – TP Investments</h3>
+          <p>Delivered a comprehensive digital solution for TP Investments, including brand identity design and website development. Developed a custom WordPress theme tailored to the client’s brand, integrated interactive features and media, and implemented a consistent visual identity across digital assets. Used Adobe Creative Suite for branding (logo, color palette, typography) and ensured brand guidelines were reflected in the website's UI/UX design.</p>
+        </article>
+        <article class="project-card" tabindex="0" aria-label="Project: IT Support Automation">
+          <h3>IT Support (Remote & Onsite) – Collins Ngoma Holdings</h3>
+          <p>Provided comprehensive IT support services encompassing both remote and onsite operations. Responsibilities included diagnosing and resolving hardware/software issues, configuring and maintaining network infrastructure, managing user accounts and system access, and ensuring cybersecurity compliance. Delivered technical training to staff and implemented routine system maintenance procedures to reduce downtime and optimize productivity</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section light" data-aos="fade-up" tabindex="0">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="mailto:wanasayila11@gmail.com" method="POST" enctype="text/plain" novalidate>
+        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
+        <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Wana Sayila. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
